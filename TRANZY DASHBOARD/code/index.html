@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>TRANZY</h2>
+        <ul class="sidebar-menu">
+            <a href="#dashboard" class="no-link-style">
+                <li><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+            </a>
+            <a href="#booking-history" class="no-link-style">
+                <li><i class="fas fa-ticket-alt"></i>Booking</li>
+            </a>
+            <a href="#ticket" class="no-link-style">
+                <li><i class="fas fa-plane"></i> Ticket</li>
+            </a>
+            <li><i class="fas fa-chart-line"></i> Analytics</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <h1 class="dashboard-title">Dashboard</h1>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-bar" placeholder="Search">
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-icons">
+                    <i class="fas fa-info-circle header-icon"></i>
+                    <i class="fas fa-cogs header-icon"></i>
+                    <i class="fas fa-bell header-icon">
+                        <span class="notification-badge">2</span>
+                    </i>
+                </div>
+                <div class="profile-container">
+                    <div class="profile-info" onclick="toggleProfileDropdown()">
+                        <img src="./images/mrRobert.jpg" alt="Profile" class="profile-image">
+                        <span class="profile-name">Kristian Roberts</span>
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="profile-dropdown" id="profileDropdown">
+                        <div class="dropdown-item">
+                            <i class="fas fa-user"></i>
+                            <span>My Profile</span>
+                        </div>
+                        <div class="dropdown-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Settings</span>
+                        </div>
+                        <div class="dropdown-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Messages</span>
+                        </div>
+                        <div class="dropdown-item">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Sign Out</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Trips Section -->
+        <div class="section-container">
+            <h2 class="section-title info-title">Upcoming trips</h2>
+            <span class="info-subtitle">Grand Canyon (Arizona, USA)</span>
+            <div class="trip-card">
+                <div class="trip-info">
+                    <p>2021/06/05 - 2021/05/20</p>
+                    <p>2 adult</p>
+                    <div class="star-rating">Review: ⭐⭐⭐⭐⭐</div>
+                    <br>
+                    <p>Red Canyon Cabins</p>
+                    <p>$1,400 (15 night)</p>
+                    <br>
+                    <p>Located in Kanab, Red Canyon Cabins features accommodations with free WiFi and a garden with a
+                        barbecue and mountain views.</p>
+                    <p style="font-style: italic;">The Grand Canyon is one of the deepest canyons in the world and one of the most unusual
+                        geological objects on our planet. Included among the seven natural wonders of the world, the
+                        Grand Canyon was declared a national park in 1919, and is one of the most famous attractions in
+                        the USA.</p>
+                </div>
+                <img src="./images/grandonion.jpg" alt="Grand Canyon" class="trip-image">
+            </div>
+        </div>
+
+        <!-- Activities Section -->
+        <div class="section-container">
+            <h2 class="section-title">Activities</h2>
+            <div>
+
+                <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="slider-container">
+                    <div class="activities-wrapper">
+                        <div class="activities-grid" id="activitiesSlider">
+                            <div class="activity-card"><img src="./images/selfDrive.jpg" alt="Self-drive">
+                                <p>Self-drive</p>
+                            </div>
+                            <div class="activity-card"><img src="./images/hiking.jpg" alt="Hiking">
+                                <p>Hiking</p>
+                            </div>
+                            <div class="activity-card"><img src="./images/excursion.jpg" alt="Excursions">
+                                <p>Excursions</p>
+                            </div>
+                            <div class="activity-card"><img src="./images/boating.jpg" alt="Boating">
+                                <p>Boating</p>
+                            </div>
+                            <div class="activity-card"><img src="./images/cycling.jpg" alt="Cycling">
+                                <p>Cycling</p>
+                            </div>
+                            <div class="activity-card"><img src="./images/kayaking.jpg" alt="Kayaking">
+                                <p>Kayaking</p>
+                            </div>
+                            <div class="activity-card"><img src="./images/paragliding.jpg" alt="Paragliding">
+                                <p>Paragliding</p>
+                            </div>
+                            <div class="activity-card"><img src="./images/scuba.jpg" alt="Scuba Diving">
+                                <p>Scuba Diving</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+            </div>
+        </div>
+
+        <!-- Booking History Section -->
+        <div class="section-container" id="booking-history">
+            <div style="display: flex; justify-content: space-between;">
+                <h2 class="section-title">Booking History</h2>
+                <div style="display: flex; justify-content: space-between;">
+                    <div class="filter-container">
+                        <button class="filter-btn" onclick="toggleFilterMenu()">Filter <i
+                                class="fas fa-filter"></i></button>
+                        <div class="filter-options" id="filterOptions">
+                            <button onclick="sortBookings('persons')">Sort by Person</button>
+                            <button onclick="sortBookings('days')">Sort by Days</button>
+                            <button onclick="sortBookings('date')">Sort by Date</button>
+                            <button onclick="sortBookings('cost')">Sort by Cost</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>City</th>
+                        <th>Date</th>
+                        <th>Days</th>
+                        <th>Person</th>
+                        <th>Apartment</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody id="bookingTable"></tbody>
+            </table>
+        </div>
+
+        <!-- Tickets Section -->
+        <div class="ticket-section" id="ticket">
+            <h2 class="section-title">Tickets</h2>
+            <div class="ticket-container">
+                <div class="ticket-card">
+                    <div class="ticket-header">
+                        <div class="ticket-info">
+                            <div style="display: inline-block;">
+                                <span class="airline-name">United Airlines</span>
+                            </div>
+                            <div style="display: inline-block;">
+                                <span>Passengers: 2 Adults</span>
+                                <span>Bags: 2 Checked, 1 Carry-on</span>
+                                <span>Class: Economy</span>
+                                <span>Flight Number: UA1234</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket-body">
+                        <div class="ticket-time">
+                            <div class="departure">
+                                <span class="time">06:30 AM</span>
+                                <span class="city">Moscow, Russia</span>
+                                <span class="airport-code">DME - Domodedovo</span>
+                                <span class="date">June 5, 2021</span>
+                            </div>
+                            <div class="flight-duration">
+                                <span class="duration">20h (1 Stop)</span>
+                                <div class="flight-path"></div>
+                            </div>
+                            <div class="arrival">
+                                <span class="time">16:00 PM</span>
+                                <span class="city">Flagstaff Pulliam, USA</span>
+                                <span class="airport-code">FLG</span>
+                                <span class="date">June 5, 2021</span>
+                            </div>
+                        </div>
+                        <table class="passenger-table">
+                            <thead>
+                                <tr>
+                                    <th>Passenger</th>
+                                    <th>Flight Number</th>
+                                    <th>Gate</th>
+                                    <th>Boarding Time</th>
+                                    <th>Zone</th>
+                                    <th>Seat</th>
+                                    <th>Ticket Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mrs. Amanda Roberts</td>
+                                    <td>UA1234</td>
+                                    <td>5</td>
+                                    <td>06:00 AM</td>
+                                    <td>3</td>
+                                    <td>37F</td>
+                                    <td>Electronic</td>
+                                </tr>
+                                <tr>
+                                    <td>Mr. Kristian Roberts</td>
+                                    <td>UA1234</td>
+                                    <td>5</td>
+                                    <td>06:00 AM</td>
+                                    <td>3</td>
+                                    <td>37K</td>
+                                    <td>Electronic</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+
+</html>
