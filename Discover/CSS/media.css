@@ -1,0 +1,40 @@
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .testing {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 992px) {
+    .WHAT {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .bar {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .profile {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .small-size {
+        display: none;
+        border-radius: 50%;
+    }
+
+    hr {
+        margin-top: 0.25rem;
+    }
+}

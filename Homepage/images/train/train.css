@@ -1,0 +1,220 @@
+body {
+    /* background-color: rgb(202, 202, 250); */
+    margin: 0;
+    /* height: 100vh; */
+    /* display: block; */
+}
+
+.masterdiv {
+    padding:50px;
+    background-color: white;
+    width:60vw;
+    height:22vh;
+    margin: auto;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    /* background-color:gainsboro; */
+    background-color: #adadad5f;
+
+    border-radius: 2rem;
+    padding-bottom: 4.7rem;
+
+    border-color: gray;
+    border-style: solid;
+
+}
+
+.masterdiv {
+    display: none;
+}
+
+
+.from_textbox, .to_textbox{
+    height: 100px;
+    width:200px;
+    display: inline-block;
+    border:0.3px solid rgb(138, 138, 188);
+    text-align: center;
+    font-size: larger;
+    transition: transform 0.1s ease;
+    position: relative;
+    background-color: #ebe9ee;
+}
+.from_textbox{
+    margin-right:0px;
+    
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+}
+.to_textbox{
+    margin-left:-4px;
+    
+    border:0.3px solid rgb(138, 138, 188);
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+}
+
+
+.from_textbox:hover {
+    transform:scale(1.05);
+    border:0.3px solid rgb(138, 138, 188);
+    border-radius: 20px;
+    z-index:2;
+    
+    
+}
+
+
+.to_textbox:hover{
+    transform:scale(1.05);
+   
+    z-index:2;
+    border-radius:20px;
+}
+
+
+.date{
+    position: relative;
+    top:-2px;
+    display: inline-block;
+    margin-left:-4px;
+    height: 102px;
+    width:170px;
+    z-index:0;
+    border:0.3px solid rgba(138,138,188);
+    transition: transform 0.1s ease;
+    background-color: #ebe9ee;
+
+    color: #757575;
+}
+
+.date:hover{
+    transform:scale(1.05);
+   
+    z-index:2;
+    border-radius:20px;
+}
+
+.passenger{
+    position: relative;
+    top:-2px;
+    margin:-4px;
+    border:0.3px solid rgba(138,138,188);
+    height:99.5px;
+    transition: transform 0.1s ease;
+    width:170px;
+    background-color: #ebe9ee;
+}
+
+.passenger:hover{
+    transform:scale(1.05);
+    border:0.3px solid #ebe9ee;
+    z-index:2;
+    border-radius:20px;
+}
+
+.classintrain{
+    position: relative;
+    top:-1.5px;
+    
+    border:0.3px solid rgba(138,138,188);
+    height:103.1px;
+    transition: transform 0.1s ease;
+    width:150px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    background-color: #ebe9ee;
+    
+    color: #757575;
+}
+
+.classintrain:hover{
+    transform:scale(1.05);
+    border:0.3px solid rgba(138,138,188);
+    border-radius: 20px;
+}
+
+.travelfor{
+    display: inline-block;
+    position: relative;
+    top:3.5px;
+    text-align: center;
+    width:200px;
+    height:50px;
+    border:1px solid black;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    font-size: 20px;
+    background-color: gainsboro;
+    
+    
+}
+
+.travelreason{
+    height:52px;
+    position: relative;
+    top: 18px;
+    width: 100px;
+    margin-left:-4px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    text-align: center;
+    font-size: 20px;
+
+    
+}
+
+.travelreason:hover{
+    
+    transform:scale(1.05);
+    border:0.3px solid rgba(138,138,188);
+    border-radius: 5px;
+}
+
+.optionsoftravelreason{
+    background-color:#ebe9ee;
+    font-size: 20px;
+}
+
+.payment{
+    position: relative;
+    top:3px;
+    display: inline-block;
+    text-align: center;
+    margin-left:123px;
+    border:1px solid black;
+    height:50px;
+    width:150px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    background-color: gainsboro;
+    font-size:20px;
+}
+
+.paymentoptions{
+    height:51px;
+    position: relative;
+    top: 15px;
+    width: 100px;
+    margin-left:-4px;
+    transition:transform 0.1s ease;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.paymentoptions:hover{
+    transform:scale(1.05);
+    border:0.3px solid rgba(138,138,188);
+    border-radius: 5px;
+}
+
+.searchbutton{
+    display:inline-block;
+    margin-left:123px;
+    height:50px;
+    width:100px;
+    position: relative;
+    top:14px;
+    border-radius:30px;
+}

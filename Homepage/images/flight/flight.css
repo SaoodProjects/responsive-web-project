@@ -1,0 +1,230 @@
+.a {
+    background-color: aliceblue;
+    height: 320px;
+    width: 1200px;
+    /* margin-top: 80px; */
+    /* margin-left: 80px; */
+    border-radius: 20px;
+
+    margin: auto;
+}
+
+.z {
+    display: grid;
+    width: 540px;
+    grid-template-columns: 120px 120px 120px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.b {
+    background-color: rgb(2, 2, 95);
+    height: 50px;
+    width: 1200px;
+    /* padding-left: 400px; */
+    padding-top: 30px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: larger;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display:none;
+}
+
+.c {
+    margin-top: 40px;
+    margin-left: 150px;
+    font-size: x-large;
+}
+
+.e {
+    /* margin-top: 40px; */
+    margin-left: 40px;
+    /* font-size: x-large; */
+}
+
+.f {
+    /* margin-top: 40px; */
+    margin-left: 40px;
+}
+
+#h {
+    color: blue;
+
+}
+
+.i {
+    height: 80px;
+    width: 300px;
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-color: rgb(199, 199, 255);
+    border-style: solid;
+}
+
+.i:hover {
+    scale: 1.05;
+    animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+
+.FROM {
+    height: 90px;
+    width: 300px;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-color: rgb(196, 196, 227);
+    border-style: solid;
+    margin-bottom: auto;
+
+}
+
+.FROM:hover {
+    scale: 1.05;
+}
+
+.TO {
+    height: 90px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-color: rgb(196, 196, 227);
+    border-style: solid;
+    margin-top: 30px;
+    text-size-adjust: 40px;
+}
+
+.TO:hover {
+    scale: 1.05;
+}
+
+.dd {
+    height: 90px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-color: rgb(196, 196, 227);
+    border-style: solid;
+    margin-top: 40px;
+    text-size-adjust: 40px;
+}
+
+.dd:hover {
+    scale: 1.05;
+}
+
+.passanger-n {
+    height: 90px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-color: rgb(196, 196, 227);
+    border-style: solid;
+    margin-top: 40px;
+    text-size-adjust: 40px;
+}
+
+.passanger-n:hover {
+    scale: 1.05;
+}
+
+.l {
+    color: blue;
+}
+
+.m {
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    margin-left: 0px;
+    border-radius: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    padding-top: 0px;
+    cursor: pointer;
+    border-color: rgb(199, 199, 255);
+    border-style: solid;
+}
+
+.m:hover {
+    scale: 1.05;
+}
+
+.n {
+    height: 100px;
+    width: 150px;
+    background-color: white;
+    margin-left: 0px;
+    border-radius: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    padding-top: 0px;
+    cursor: pointer;
+    border-color: rgb(199, 199, 255);
+    border-style: solid;
+}
+
+.n:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.o {
+    height: 40px;
+    width: 250px;
+    background-color:#468dff;
+    margin-left: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: rgb(199, 199, 255);
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 5px;
+    text-decoration: aliceblue;
+}
+
+.s {
+    height: 40px;
+    width: 250px;
+    background-color: rgb(160, 171, 249);
+    margin-left: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: rgb(199, 199, 255);
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 5px;
+    text-decoration: aliceblue;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    display: none;
+}

@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    font-weight: 550;
+    font-family: sans-serif;
+}
+
+
+/* HEADER START */
+.header {
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    z-index: 2000;
+    margin-left: -8vw;
+    margin-right: -8vw;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.295);
+}
+
+.logo,
+.sign {
+    width: 20%;
+    height: 100%;
+}
+
+.navbutton {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navitem,
+.language,
+.signin {
+    background-color: white;
+    border-style: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    transition-duration: 0.15s;
+}
+
+.navitem:hover,
+.language:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.sign {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 8vw;
+}
+
+.signin {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.img1 {
+    width: 23px;
+    border-right: 3px solid #f0f0f0;
+    padding-right: 8px;
+    margin-right: 4px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.signin:hover {
+    background-color: rgb(220, 0, 0);
+    cursor: pointer;
+}
+
+.logo img {
+    width: 150px;
+    height: 50px;
+}
+
+.logo {
+    margin-top: 8px;
+    margin-left: 8vw;
+}
+
+/* HEADER END */
+
+
+/* CONTENT-1 START */
+.changetext {
+    width: 100%;
+    height: 10vh;
+    margin-top: 5vh;
+    font-size: 48px;
+    text-align: center
+}
+
+.services {
+    margin: 1.5vh auto;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceitems {
+    border-style: none;
+    background-color: white;
+    margin: 25px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.serviceitems:hover {
+    border-bottom: 2px solid black;
+}
+
+.flightimg,
+.bedimg,
+.trainimg,
+.busimg,
+.transfer {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+
+.bedimg {
+    width: 20px;
+    height: 20px;
+}
+
+.transfer {
+    width: 25px;
+    height: 25px;
+}
+
+/* CONTENT-1 END */
+
+
+/* POPULAR DESTINATIONS START */
+.populardtext {
+    text-align: center;
+    margin: 5vh;
+    font-size: 24px;
+}
+
+.destinationimg {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.destinationimages {
+    border-radius: 1rem;
+
+    width: 190px;
+
+    transition: 0.15s;
+}
+
+.goatext {
+    text-align: center;
+    position: relative;
+    top: -35px;
+    color: white;
+    font-size: 24px;
+    font-weight: 400
+}
+
+.destinationimages:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+/* POPULAR DESTINATION END */
+
+
+
+/* OTHER SERVICES START */
+.services-section {
+    width: 100%;
+}
+
+.services-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 180px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    transition: background 0.3s ease;
+    transition: 0.15s;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Add hover effect */
+.service-card:hover {
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.6)), var(--card-bg);
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+/* OTHER SERVICES END */
+
+
+
+/* MEMBER DISCOUNT START */
+.memberdiv {
+    position: relative;
+}
+
+.memberimg {
+    width: 100%;
+    margin-top: 10vh;
+    border-radius: 2rem;
+}
+
+.memberbox {
+    background-color: white;
+    width: 350px;
+    height: 160px;
+    position: absolute;
+    border-radius: 1.5rem;
+    top: 100px;
+    left:  100px;
+    padding: 15px 25px 30px 25px;
+}
+
+.textrand {
+    font-weight: 550;
+    font-size: 32px;
+}
+
+.textrand2 {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.dealsbutton {
+    margin-top: 12px;
+    background-color: rgb(22, 104, 232);
+    padding: 12px;
+    border-radius: 2rem;
+    color: white;
+    border: 1px solid rgb(22, 104, 232);
+    font-weight: 550;
+}
+
+.dealsbutton:hover {
+    background-color: rgb(15, 80, 200)
+}
+
+.dealsbutton:active {
+    background-color: rgb(10, 60, 150);
+}
+
+/* MEMBER DISCOUNT END */
+
+
+/* FOOTER START */
+.footerup {
+    display: flex;
+    background-color: #f2f2f2;
+    /* margin: -8vw; */
+    padding: 2vw 10vw;
+}
+
+.footercolumn {
+    margin-right: 2vw;
+}
+
+.something {
+    margin-left: 14vw;
+}
+
+.footercolumn ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.footercolumn ul li a:hover {
+    text-decoration: underline;
+}
+
+.footercolumn h3 {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+
+.footercolumn p {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footercolumn ul li {
+    margin-top: 6px;
+}
+
+.something3 {
+    margin-bottom: 5px;
+}
+
+.something2 {
+    margin-bottom: 0px;
+}
+
+.footer-down {
+    background-color: black;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.sometext {
+    color: white;
+    position: relative;
+    left: 70vw;
+}
+
+.socialimg {
+    width: 40px;
+    height: 40px;
+    margin: 15px
+}
+
+.social {
+    position: absolute;
+    left: 9vw;
+}
+
+.facebookimg {
+    width: 20px;
+}
+
+.instaimg {
+    width: 45px;
+    height: 45px;
+}
+
+/* FOOTER END */
+
+.big-image img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+/* update */
+/* Popular Destinations Section */
+.populardestinations {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.populardestinations-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.populardestinations-subtitle {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Slider Container */
+.destination-slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 20px 0;
+}
+
+/* Navigation Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.slider-btn:disabled {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
+}
+
+.slider-btn:hover:not(:disabled) {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+.destination-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+    padding: 0 10px;
+    width: 400%;
+}
+
+.destination-card {
+    position: relative;
+    width: 290px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Overlay */
+.destination-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.destination-card:hover .destination-overlay {
+    transform: translateY(0);
+}
+
+.destination-overlay h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.destination-overlay p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Explore Button */
+.explore-button {
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.explore-button:hover {
+    background-color: #1565C0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .destination-card {
+        min-width: 200px;
+        height: 250px;
+    }
+}
+
+.all-content {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.member-discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.member-img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.member-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.member-box {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: black;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discount-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.discount-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.deals-button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.deals-button:hover {
+    background-color: #0056b3;
+}
+
+.discount-popup {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 450px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    padding: 11px;
+    text-align: center;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.popup-content ul {
+    text-align: left;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-content ul li {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.close-popup {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.close-popup:hover {
+    background-color: #b02a37;
+}
+
+.services-section h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.3rem;
+    border-top: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 2px;
+    padding-top: 50px;
+}

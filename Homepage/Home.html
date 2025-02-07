@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranzy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images/bus/bus.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+
+    <section class="all-content">
+        <div class="header">
+            <div class="logo"><a href="#"><img src="images/logo.jpg" alt="logo"></a></div>
+            <div class="navbutton">
+                <button class="discover navitem">Discover</button>
+                <button class="trip navitem">Trip</button>
+                <button class="review navitem aboutUs">About Us</button>
+                <button class="support navitem contactUs">Support</button>
+            </div>
+            <div class="sign">
+                <button class="language"><img src="images/globe.png" alt="globe" class="img1"><span>ENG</span></button>
+                <button class="signin" name="sign">Sign in</button>
+            </div>
+        </div>
+
+        <div class="changetext">Where to?</div>
+        <div class="services">
+            <button class="serviceitems">
+                <img src="images/airplane.jpg" class="flightimg" alt="plane">Flights
+            </button>
+            <button class="serviceitems">
+                <img src="images/bed1.jpg" class="bedimg" alt="hotel">Hotels
+            </button>
+            <button class="serviceitems">
+                <img src="images/train1.jpg" class="trainimg" alt="train">Trains
+            </button>
+            <button class="serviceitems">
+                <img src="images/bus2.jpg" class="busimg" alt="bus">Buses
+            </button>
+            <button class="serviceitems">
+                <img src="images/transfer.jpg" class="transfer" alt="cab">Airport&nbspTransfer
+            </button>
+        </div>
+
+        <!-- Shreyansh Bus code -->
+        <div class="contentArea">
+            <div class="background">
+                <div class="busMainArea">
+                    <label class="from">
+                        <div class="from-content">
+                            <div class="from_top-text-box">
+                                <div class="from_top-text">
+                                    From
+                                </div>
+                            </div>
+                            <div class="from_input-box">
+                                <input type="text" id="from_input" value="Lucknow">
+                            </div>
+                            <div class="from_botton-text">
+                                <div class="from_bottom-text">
+                                    Uttar Pradesh, India
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="to">
+                        <div class="to-content">
+                            <div class="to_top-text-box">
+                                <div class="to_top-text">
+                                    To
+                                </div>
+                            </div>
+                            <div class="to_input-box">
+                                <input type="text" id="to_input" value="Agra">
+                            </div>
+                            <div class="to_botton-text">
+                                <div class="to_bottom-text">
+                                    Uttar Pradesh, India
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="travelDate">
+                        <div class="travelDate-content">
+                            <div class="travelDate_top-text-box">
+                                <div class="travelDate_top-text">
+                                    Travel Date
+                                </div>
+                            </div>
+                            <div class="travelDate_input-box">
+                                <input type="date" id="travelDate_input" value="2024-12-12">
+                            </div>
+                            <div class="travelDate_botton-text">
+                                <div class="travelDate_bottom-text">
+                                    Thursday
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
+                    <div class="bottom-content">
+                        <div class="reason-for-travel_area">
+                            <div class="reason-for-travel">
+                                <button class="reason-for-travel_box">
+                                    Reason for travel
+                                </button>
+                                <div class="reason-for-travel_button">
+                                    <select class="busOptions">
+                                        <option>Leisure</option>
+                                        <option>Study</option>
+                                        <option>Medical</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promocode_area">
+                            <button class="promocode_box">
+                                <label class="promocode_text">
+                                    <div class="align font fontSize">
+                                        Promocode:
+                                    </div>
+                                    <input id="promocode_enter">
+                                    <!-- ___ -->
+                                    </input>
+                                </label>
+                            </button>
+                        </div>
+                        <div class="search_area">
+                            <button class="search_box">
+                                <div class="font fontSize">
+                                    Search
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shreyansh Bus code END -->
+
+        <div class="populardestinations">
+            <h2 class="populardestinations-title">Discover Popular Destinations</h2>
+            <p class="populardestinations-subtitle">Handpicked destinations for your dream vacation</p>
+            <div class="destination-slider-container">
+                <button class="slider-btn prev-btn" disabled>❮</button>
+                <div class="destination-grid">
+                    <div class="destination-card" style="background-image: url('images/tajmahal.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Agra</h3>
+                            <p>Experience eternal love at the Taj Mahal, the crown jewel of India.</p>
+                            <button class="explore-button">Explore Agra</button>
+                        </div>
+                    </div>
+                    <div class="destination-card" style="background-image: url('images/gangaghatsofvaranasi.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Varanasi</h3>
+                            <p>Dive into spirituality at the sacred Ganga Ghats of Varanasi.</p>
+                            <button class="explore-button">Explore Varanasi</button>
+                        </div>
+                    </div>
+                    <div class="destination-card" style="background-image: url('images/mysorepalace.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Mysore</h3>
+                            <p>Step into royal splendor at the majestic Mysore Palace.</p>
+                            <button class="explore-button">Explore Mysore</button>
+                        </div>
+                    </div>
+                    <div class="destination-card" style="background-image: url('images/udaipurlakepalace.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Udaipur</h3>
+                            <p>Discover the Venice of the East at Udaipur's stunning lakes and palaces.</p>
+                            <button class="explore-button">Explore Udaipur</button>
+                        </div>
+                    </div>
+                    <div class="destination-card" style="background-image: url('images/goabeach.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Goa</h3>
+                            <p>Beach paradise with vibrant nightlife.</p>
+                            <button class="explore-button">Explore Goa</button>
+                        </div>
+                    </div>
+                    <div class="destination-card" style="background-image: url('images/qutubminar.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Delhi</h3>
+                            <p>Explore history and culture in India's capital.</p>
+                            <button class="explore-button">Explore Delhi</button>
+                        </div>
+                    </div>
+                    <div class="destination-card" style="background-image: url('images/gatewayofindia.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Mumbai</h3>
+                            <p>Feel the pulse of India’s city of dreams, where culture, cinema, and coastal charm collide.</p>
+                            <button class="explore-button">Explore Mumbai</button>
+                        </div>
+                    </div>
+                    <div class="destination-card" style="background-image: url('images/jaipurhawamahal.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Jaipur</h3>
+                            <p>The Pink City with a royal charm.</p>
+                            <button class="explore-button">Explore Jaipur</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" style="background-image: url('images/kolkatavictoriapalace.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Kolkata</h3>
+                            <p>Uncover the soul of Bengal in Kolkata, the city of art, culture, and timeless charm.</p>
+                            <button class="explore-button">Explore Kolkata</button>
+                        </div>
+                    </div>
+                    <div class="destination-card" style="background-image: url('images/lucknowrumidarwaza.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Lucknow</h3>
+                            <p>Experience the Nawabi elegance of Lucknow, where heritage and hospitality meet.</p>
+                            <button class="explore-button">Explore Lucknow</button>
+                        </div>
+                    </div>
+                    <div class="destination-card" style="background-image: url('images/hyderabadcharminar.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Hyderabad</h3>
+                            <p>Taste the magic of the Nizam’s city, Hyderabad, with its biryani, pearls, and palaces.</p>
+                            <button class="explore-button">Explore Hyderabad</button>
+                        </div>
+                    </div>
+                    <div class="destination-card" style="background-image: url('images/kerala.jpg');">
+                        <div class="destination-overlay">
+                            <h3>Kocchi</h3>
+                            <p>Set sail into serenity aboard a traditional Kerala boathouse, where nature's beauty surrounds you on every side.</p>
+                            <button class="explore-button">Explore Kocchi</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn next-btn">❯</button>
+            </div>
+        </div>
+
+        <div class="services-section">
+            <h1>Exclusive Extras</h1>
+            <div class="services-grid">
+                <div class="service-card" style="background-image: url('images/adventure.webp');">
+                    <h3>Adventure</h3>
+                </div>
+                <div class="service-card" style="background-image: url('images/luxurytrain.webp');">
+                    <h3>Luxury Trains</h3>
+                </div>
+                <div class="service-card" style="background-image: url('images/cruise.webp');">
+                    <h3>Cruise</h3>
+                </div>
+                <div class="service-card" style="background-image: url('images/stays.webp');">
+                    <h3>Villas & Stays</h3>
+                </div>
+                <div class="service-card" style="background-image: url('images/monuments.webp');">
+                    <h3>Monuments</h3>
+                </div>
+                <div class="service-card" style="background-image: url('images/activites.webp');">
+                    <h3>Activities</h3>
+                </div>
+                <div class="service-card" style="background-image: url('images/gift-voucher.webp');">
+                    <h3>Gift Voucher</h3>
+                </div>
+                <div class="service-card" style="background-image: url('images/visa.webp');">
+                    <h3>Visa</h3>
+                </div>
+            </div>
+
+            <div class="member-discount">
+                <div class="member-img-container">
+                    <img class="member-img" src="images/BEX-IN-DussehraDiwaliFestivalBreak-HP-Hero-DM-928x398.webp" alt="Discount Offer">
+                    <div class="member-box">
+                        <h2 class="discount-title">Members save 25% or more</h2>
+                        <p class="discount-description">Celebrate Diwali on the beach in Dubai, or take the family to New York
+                            or London for less.</p>
+                        <button class="deals-button" id="view-deals">Unlock Your Deals</button>
+                    </div>
+                </div>
+        
+                <div class="discount-popup" id="discount-popup">
+                    <div class="popup-content">
+                        <h3>Special Member Discounts</h3>
+                        <ul>
+                            <li><strong>Dubai:</strong> Up to 25% off beachside resorts.</li>
+                            <li><strong>New York:</strong> Enjoy 30% off family hotels.</li>
+                            <li><strong>London:</strong> Save 20% on luxury stays.</li>
+                        </ul>
+                        <button class="close-popup" id="close-popup">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div class="footerup">
+        <div class="footercolumn">
+            <h1>About Tranzy</h1>
+            <ul type="none">
+                <li><a class="aboutUs">About Us</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Resources and Policies</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Trust & Safety</a></li>
+                <li><a class="contactUs">Contact us</a></li>
+                <li><a href="#">Accessibility Statement</a></li>
+            </ul>
+        </div>
+
+        <div class="footercolumn">
+            <h1>Explore</h1>
+            <ul type="none">
+                <li><a href="#">Write a review</a></li>
+                <li><a href="#">Add a Place</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Travellers' Choice</a></li>
+                <li><a href="#">GreenLeaders</a></li>
+                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">Travel Articles</a></li>
+            </ul>
+        </div>
+
+        <div class="footercolumn">
+            <h1>Do Business With Us</h1>
+            <ul type="none">
+                <li><a href="#">Owners & DMO/CVB</a></li>
+                <li><a href="#">Business Advantage</a></li>
+                <li><a href="#">Sponsored Placements</a></li>
+                <li class="something3"><a href="#">Access our Content API</a></li>
+            </ul>
+            <p class="something2">Get The App</p>
+            <ul type="none">
+                <li><a href="#">iPhone App</a></li>
+                <li><a href="#">Android App</a></li>
+            </ul>
+        </div>
+
+
+        <div class="footercolumn something">
+            <h1>Tranzy Sites</h1>
+            <p style="margin-top: 4px;">Book tours and attraction tickets on Viator</p>
+        </div>
+    </div>
+
+    <div class="footer-down">
+        <div class="social">
+            <a href="#"><img class="socialimg instaimg" src="images/insta.jpg" alt="insta"></a>
+            <a href="#"><img class="socialimg" src="images/twitter.jpg" alt=""></a>
+            <a href="#"><img class="socialimg" src="images/linkedin.jpg" alt=""></a>
+            <a href="#"><img class="socialimg facebookimg" src="images/facebook.jpg" alt=""></a>
+        </div>
+        <div class="sometext">© 2024 TRANZY PVT. LTD.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
